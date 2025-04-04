@@ -77,7 +77,7 @@ h3 a:hover {
 
 main#main-content {
   flex: 1;
-  padding: 1em;
+  padding: .5em;
 }
 
 .sidebar {
