@@ -1,0 +1,328 @@
+/* ========== RESET & BASE TYPOGRAPHY ========== */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+h1 {
+  margin: 0;
+}
+.page-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: #122D4F; /* dark navy */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+h3 a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+h3 a:hover {
+  text-decoration: underline;
+  color: #0066cc; /* or any highlight color */
+}
+.emphasized {
+  display: block;               /* Needed to apply centering */
+  font-size: 1.5rem;
+  text-align: center;           /* Center the text */
+  font-weight: bold;
+  font-style: italic;
+  color: #122D4F;
+  background-color: #ffffff;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin: 10px auto;            /* Optional: centers the block with some spacing */
+  width: fit-content;           /* Keeps it tight around the content */
+}
+
+.services-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.services-table td {
+  vertical-align: top;
+  padding: 1rem;
+}
+
+.services-table ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+}
+
+/* ========== STRUCTURE: CONTAINERS & LAYOUT ========== */
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+/* Flex layout for main content and sidebar */
+.main-wrapper {
+  display: flex;
+  width: 1200px;
+  margin-top: 0px; /* Adjust if using fixed header */
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+main#main-content {
+  flex: 1;
+  padding: 1em;
+}
+
+.sidebar {
+  width: 300px;
+  padding: 1em;
+  background: #f4f4f4;
+  border-left: 1px solid #ccc;
+}
+
+.image-row {
+  display: flex;
+  gap: 6rem; /* space between images */
+  justify-content: center;
+  flex-wrap: wrap; /* wraps on small screens */
+}
+
+.image-row img {
+  width: 30%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px; /* optional */
+}
+
+
+/* ========== HEADER ========== */
+
+header {
+  background: #172B4D;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between; /* logo left, contact right */
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.logo {
+  height: 100px;
+}
+
+.contact-info {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #fff;
+  line-height: 1.4;
+}
+
+/* ========== NAVIGATION ========== */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Styled top navigation bar with tabs */
+.top-nav {
+  background: linear-gradient(to bottom, #f2f2f2, #d9d9d9);
+  border-bottom: 3px solid #172B4D;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.top-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 60px; /* Controls height of nav bar */
+}
+
+.top-nav li {
+  border-right: 1px solid #ccc;
+}
+
+.top-nav li:last-child {
+  border-right: none;
+}
+
+.top-nav li a {
+  display: block;
+  padding: 18px 22px;
+  text-decoration: none;
+  color: #172B4D;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  height: 100%;
+  transition: background-color 0.2s;
+}
+
+.top-nav li.active a {
+  background-color: #e3edf9;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.top-nav li a:hover {
+  background-color: #3b6da5;
+  color: #fff;
+}
+
+/* ========== HERO SECTION ========== */
+
+.hero {
+  background: url('/assets/hero-metal.jpg') center/cover no-repeat;
+  color: #070606;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #cc0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* ========== SECTION: OVERVIEW & SERVICES ========== */
+
+.overview {
+  background: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.services {
+  padding: 2rem 0;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1 1 30%;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== INLINE CONTACT SECTION ========== */
+
+.inline-contact {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 6px;
+  max-width: 300px;
+  font-size: 0.9rem;
+}
+
+.inline-contact form input,
+.inline-contact form textarea {
+  width: 100%;
+  margin-bottom: 0.75rem;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.inline-contact form button {
+  width: 100%;
+  padding: 10px;
+  background: #ccc;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ========== CAROUSEL ========== */
+
+.carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 2rem auto;
+  border: 2px solid #ccc;
+  overflow: hidden;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel .prev {
+  left: 10px;
+}
+
+.carousel .next {
+  right: 10px;
+}
+
+/* ========== DIVIDERS / UTILITY CLASSES ========== */
+
+.custom-line {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+/* ========== FOOTER ========== */
+
+footer {
+  background: #172B4D;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem 0;
+}
