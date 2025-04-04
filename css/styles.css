@@ -286,8 +286,8 @@ nav a {
   border-top-right-radius: 12px;
   box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
-  max-width: 1100px;
-  padding: 0;
+  max-width: auto;
+  padding: 0 auto;
   overflow: hidden;
 }
 
@@ -302,7 +302,7 @@ nav a {
 }
 
 .top-nav li {
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #5a728f;
 }
 
 .top-nav li:last-child {
