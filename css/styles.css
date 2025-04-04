@@ -93,7 +93,12 @@ main#main-content {
   justify-content: center;
   flex-wrap: wrap; /* wraps on small screens */
 }
-
+.image-row-three {
+  display: flex;
+  gap: 3rem; /* space between images */
+  justify-content: center;
+  flex-wrap: wrap; /* wraps on small screens */
+}
 .image-row img {
   width: 30%;
   max-width: 100%;
@@ -160,6 +165,77 @@ main#main-content {
 .page-contact-form button:hover {
   background-color: #e67e22;
 }
+
+.pattern-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.pattern-item {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.pattern-item img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+.info-blocks {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  font-family: sans-serif;
+}
+
+.info-row img {
+  width: 300px;
+  
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+
+.info-text h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.info-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .info-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info-text h3 {
+    font-size: 1.25rem;
+  }
+
+  .info-text p {
+    font-size: 1rem;
+  }
+}
+
 
 /* ========== HEADER ========== */
 
