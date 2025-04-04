@@ -1,11 +1,43 @@
 <div class = "container">
-    <h2>Contact Us</h2>
-    <p>Get in touch with our team for quotes, questions, or custom fabrication inquiries.</p>
-
-    <form action="mailto:your@email.com" method="POST" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
-        <button type="submit">Send</button>
-    </form>
+    <section class="page-contact-block">
+        <div class="page-contact-grid">
+          
+          <!-- Left: Contact Info -->
+          <div class="page-contact-info">
+            <h2>Sales and Customer Service</h2>
+            <p>Dominic Logiodice<br>
+              <a href="mailto:Dominic@centralexpandedmetal.com">Dominic@centralexpandedmetal.com</a><br><br>
+      
+              Central Expanded Metal<br>
+              1213 N. Industrial Rd.<br>
+              Chandler, OK 74834<br>
+              Phone – 405-258-0079<br>
+              Fax – 405-258-2468<br><br>
+      
+              Check us out in the Thomas Industrial Directory:<br>
+              <a href="https://thomasnet.com" target="_blank">https://thomasnet.com</a>
+            </p>
+          </div>
+      
+          <!-- Right: Contact Form -->
+          <form class="page-contact-form" name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+      
+            <input type="text" name="name" placeholder="Name (required)" required>
+            <input type="email" name="email" placeholder="Email (required)" required>
+            <input type="tel" name="phone" placeholder="Phone (required)" required>
+            <input type="text" name="fax" placeholder="Fax">
+            <input type="text" name="company" placeholder="Company Name (required)" required>
+            <input type="text" name="address" placeholder="Address">
+            <input type="text" name="city" placeholder="City (required)" required>
+            <input type="text" name="state" placeholder="State (required)" required>
+            <input type="text" name="zipcode" placeholder="Zipcode (required)" required>
+            <textarea name="comments" placeholder="RFQ information, questions, or comments" rows="5"></textarea>
+      
+            <button type="submit">Send</button>
+          </form>
+      
+        </div>
+      </section>
+      
 </div>

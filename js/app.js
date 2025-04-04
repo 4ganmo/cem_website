@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
+
     // Load home page by default
     loadPage("home");
 
@@ -63,6 +64,23 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
             const page = link.getAttribute("data-page");
             if (page) loadPage(page);
+        });
+    });
+});
+// Wait for DOM to load
+document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll('.top-nav a');
+
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const page = link.getAttribute('data-page');
+
+            // Set a class on the <body> like 'page-contact'
+            document.body.className = `page-${page}`;
+
+            // Load page content here (if you're doing AJAX or similar)
+            // Example: loadContent(page);
         });
     });
 });
